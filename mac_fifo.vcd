@@ -1,0 +1,299 @@
+$date
+	Fri Sep 11 12:02:20 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module mac_fifo_tb $end
+$var wire 16 ! result [15:0] $end
+$var wire 1 " fifo_full $end
+$var wire 1 # fifo_empty $end
+$var parameter 32 $ FIFO_DEPTH $end
+$var parameter 32 % WIDTH $end
+$var reg 8 & a [7:0] $end
+$var reg 16 ' acc [15:0] $end
+$var reg 8 ( b [7:0] $end
+$var reg 1 ) clk $end
+$var reg 1 * read_en $end
+$var reg 1 + rst $end
+$var reg 1 , write_en $end
+$scope module dut $end
+$var wire 8 - a [7:0] $end
+$var wire 16 . acc [15:0] $end
+$var wire 8 / b [7:0] $end
+$var wire 1 ) clk $end
+$var wire 1 * read_en $end
+$var wire 1 + rst $end
+$var wire 1 , write_en $end
+$var wire 16 0 result [15:0] $end
+$var wire 8 1 mac_b [7:0] $end
+$var wire 16 2 mac_acc [15:0] $end
+$var wire 8 3 mac_a [7:0] $end
+$var wire 1 " fifo_full $end
+$var wire 1 # fifo_empty $end
+$var wire 32 4 fifo_dout [31:0] $end
+$var wire 32 5 fifo_din [31:0] $end
+$var parameter 64 6 FIFO_DATA_WIDTH $end
+$var parameter 32 7 FIFO_DEPTH $end
+$var parameter 32 8 WIDTH $end
+$scope module data_fifo $end
+$var wire 1 ) clk $end
+$var wire 32 9 din [31:0] $end
+$var wire 1 * rd_en $end
+$var wire 1 + rst $end
+$var wire 1 , wr_en $end
+$var wire 1 " full $end
+$var wire 1 # empty $end
+$var parameter 64 : DATA_WIDTH $end
+$var parameter 32 ; DEPTH $end
+$var reg 4 < count [3:0] $end
+$var reg 32 = dout [31:0] $end
+$var reg 3 > rd_ptr [2:0] $end
+$var reg 3 ? wr_ptr [2:0] $end
+$upscope $end
+$scope module mac_unit $end
+$var wire 8 @ a [7:0] $end
+$var wire 16 A acc [15:0] $end
+$var wire 8 B b [7:0] $end
+$var wire 16 C result [15:0] $end
+$var wire 16 D product [15:0] $end
+$var parameter 32 E WIDTH $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 E
+b1000 ;
+b100000 :
+b1000 8
+b1000 7
+b100000 6
+b1000 %
+b1000 $
+$end
+#0
+$dumpvars
+bx D
+bx C
+bx B
+bx A
+bx @
+bx ?
+bx >
+bx =
+bx <
+b0 9
+b0 5
+bx 4
+bx 3
+bx 2
+bx 1
+bx 0
+b0 /
+b0 .
+b0 -
+0,
+1+
+0*
+0)
+b0 (
+b0 '
+b0 &
+x#
+x"
+bx !
+$end
+#5000
+b0 !
+b0 0
+b0 C
+b0 2
+b0 A
+b0 D
+b0 1
+b0 B
+b0 3
+b0 @
+b0 ?
+b0 4
+b0 =
+b0 >
+1#
+0"
+b0 <
+1)
+#10000
+1,
+b1010 '
+b1010 .
+b100 (
+b100 /
+b101000001000000000000001010 5
+b101000001000000000000001010 9
+b101 &
+b101 -
+0)
+0+
+#15000
+0#
+b1 <
+b1 ?
+1)
+#20000
+1*
+0,
+0)
+#25000
+b1010 2
+b1010 A
+b11110 !
+b11110 0
+b11110 C
+b10100 D
+b100 1
+b100 B
+b101 3
+b101 @
+b1 >
+b101000001000000000000001010 4
+b101000001000000000000001010 =
+1#
+b0 <
+1)
+#30000
+0*
+0)
+#35000
+1)
+#40000
+1,
+b10100 '
+b10100 .
+b11 (
+b11 /
+b1010000000110000000000010100 5
+b1010000000110000000000010100 9
+b1010 &
+b1010 -
+0)
+#45000
+b10 ?
+0#
+b1 <
+1)
+#50000
+1*
+0,
+0)
+#55000
+b10100 2
+b10100 A
+b11 1
+b11 B
+b110010 !
+b110010 0
+b110010 C
+b11110 D
+b1010 3
+b1010 @
+1#
+b0 <
+b10 >
+b1010000000110000000000010100 4
+b1010000000110000000000010100 =
+1)
+#60000
+0*
+0)
+#65000
+1)
+#70000
+1,
+b101 '
+b101 .
+b1111 (
+b1111 /
+b1111000011110000000000000101 5
+b1111000011110000000000000101 9
+b1111 &
+b1111 -
+0)
+#75000
+0#
+b1 <
+b11 ?
+1)
+#80000
+1*
+0,
+0)
+#85000
+b101 2
+b101 A
+b1111 1
+b1111 B
+b11100110 !
+b11100110 0
+b11100110 C
+b11100001 D
+b1111 3
+b1111 @
+b11 >
+b1111000011110000000000000101 4
+b1111000011110000000000000101 =
+1#
+b0 <
+1)
+#90000
+0*
+0)
+#95000
+1)
+#100000
+1,
+b11001 '
+b11001 .
+b1100100 (
+b1100100 /
+b11001000000000000011001 5
+b11001000000000000011001 9
+b0 &
+b0 -
+0)
+#105000
+b100 ?
+0#
+b1 <
+1)
+#110000
+1*
+0,
+0)
+#115000
+b11001 2
+b11001 A
+b1100100 1
+b1100100 B
+b11001 !
+b11001 0
+b11001 C
+b0 D
+b0 3
+b0 @
+1#
+b0 <
+b100 >
+b11001000000000000011001 4
+b11001000000000000011001 =
+1)
+#120000
+0*
+0)
+#125000
+1)
+#126000

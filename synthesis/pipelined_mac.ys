@@ -1,0 +1,12 @@
+read_verilog -sv rtl/mac_pipelined.sv
+
+hierarchy -top mac_pipelined
+
+proc
+opt
+techmap
+opt
+
+stat
+
+write_verilog synthesis/mac_pipelined_synth.v

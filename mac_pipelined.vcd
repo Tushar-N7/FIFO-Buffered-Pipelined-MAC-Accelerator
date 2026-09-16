@@ -1,0 +1,173 @@
+$date
+	Fri Sep 11 12:24:59 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module mac_pipelined_tb $end
+$var wire 16 ! result [15:0] $end
+$var parameter 32 " WIDTH $end
+$var reg 8 # a [7:0] $end
+$var reg 16 $ acc [15:0] $end
+$var reg 8 % b [7:0] $end
+$var reg 1 & clk $end
+$var reg 1 ' rst $end
+$scope module dut $end
+$var wire 8 ( a [7:0] $end
+$var wire 16 ) acc [15:0] $end
+$var wire 8 * b [7:0] $end
+$var wire 1 & clk $end
+$var wire 1 ' rst $end
+$var parameter 32 + WIDTH $end
+$var reg 16 , acc_reg [15:0] $end
+$var reg 16 - product_reg [15:0] $end
+$var reg 16 . result [15:0] $end
+$upscope $end
+$scope task test_mac $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 +
+b1000 "
+$end
+#0
+$dumpvars
+bx .
+bx -
+bx ,
+b0 *
+b0 )
+b0 (
+1'
+0&
+b0 %
+b0 $
+b0 #
+bx !
+$end
+#5000
+b0 ,
+b0 -
+b0 !
+b0 .
+1&
+#10000
+0&
+#15000
+1&
+#16000
+0'
+#20000
+b1010 $
+b1010 )
+b100 %
+b100 *
+b101 #
+b101 (
+0&
+#25000
+b1010 ,
+b10100 -
+1&
+#30000
+0&
+#35000
+b11110 !
+b11110 .
+1&
+#40000
+b10100 $
+b10100 )
+b11 %
+b11 *
+b1010 #
+b1010 (
+0&
+#45000
+b10100 ,
+b11110 -
+1&
+#50000
+0&
+#55000
+b110010 !
+b110010 .
+1&
+#60000
+b101 $
+b101 )
+b1111 %
+b1111 *
+b1111 #
+b1111 (
+0&
+#65000
+b101 ,
+b11100001 -
+1&
+#70000
+0&
+#75000
+b11100110 !
+b11100110 .
+1&
+#80000
+b11001 $
+b11001 )
+b1100100 %
+b1100100 *
+b0 #
+b0 (
+0&
+#85000
+b11001 ,
+b0 -
+1&
+#90000
+0&
+#95000
+b11001 !
+b11001 .
+1&
+#100000
+b110010 $
+b110010 )
+b1000 %
+b1000 *
+b11001 #
+b11001 (
+0&
+#105000
+b110010 ,
+b11001000 -
+1&
+#110000
+0&
+#115000
+b11111010 !
+b11111010 .
+1&
+#120000
+b1100100 $
+b1100100 )
+b11111111 %
+b11111111 *
+b11111111 #
+b11111111 (
+0&
+#125000
+b1100100 ,
+b1111111000000001 -
+1&
+#130000
+0&
+#135000
+b1111111001100101 !
+b1111111001100101 .
+1&
+#136000

@@ -1,0 +1,73 @@
+$date
+	Tue Sep  8 13:18:39 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module mac_tb $end
+$var wire 16 ! result [15:0] $end
+$var parameter 32 " WIDTH $end
+$var reg 8 # a [7:0] $end
+$var reg 16 $ acc [15:0] $end
+$var reg 8 % b [7:0] $end
+$scope module dut $end
+$var wire 8 & a [7:0] $end
+$var wire 16 ' acc [15:0] $end
+$var wire 8 ( b [7:0] $end
+$var wire 16 ) result [15:0] $end
+$var wire 16 * product [15:0] $end
+$var parameter 32 + WIDTH $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 +
+b1000 "
+$end
+#0
+$dumpvars
+b10100 *
+b11110 )
+b100 (
+b1010 '
+b101 &
+b100 %
+b1010 $
+b101 #
+b11110 !
+$end
+#10000
+b10100 $
+b10100 '
+b11 %
+b11 (
+b110010 !
+b110010 )
+b11110 *
+b1010 #
+b1010 &
+#20000
+b101 $
+b101 '
+b1111 %
+b1111 (
+b11100110 !
+b11100110 )
+b11100001 *
+b1111 #
+b1111 &
+#30000
+b11001 $
+b11001 '
+b1100100 %
+b1100100 (
+b11001 !
+b11001 )
+b0 *
+b0 #
+b0 &
+#40000
